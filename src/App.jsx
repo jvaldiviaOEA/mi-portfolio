@@ -45,6 +45,15 @@ export default function App() {
           </ul>
         </section>
 
+        <section aria-labelledby="education-heading" className="card">
+          <h2 id="education-heading">Educación</h2>
+          <ul className="education-list" aria-label="Cursos realizados">
+            <li>Creating a microservice</li>
+            <li>Java 21</li>
+            <li>Scrum master</li>
+          </ul>
+        </section>
+
         <section aria-labelledby="projects-heading" className="card">
           <h2 id="projects-heading">Proyectos</h2>
           <p className="muted">Aún no hay proyectos publicados. Aquí aparecerán los proyectos cuando estén listos.</p>

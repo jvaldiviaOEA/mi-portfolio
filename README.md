@@ -8,6 +8,11 @@ Características:
 - Tipografía: Montserrat (Google Fonts).
 - Paleta: colores llamativos pero con tono serio (púrpura + cian).
 
+Educación / Cursos:
+- Creating a microservice
+- Java 21
+- Scrum master
+
 Instalación local:
 1. Asegúrate de tener Node 18+.
 2. Instala dependencias:
