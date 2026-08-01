@@ -2,6 +2,8 @@
   "name": "mi-portfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "Portfolio de Juan Pérez",
+  "homepage": "https://mi-portfolio.vercel.app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
