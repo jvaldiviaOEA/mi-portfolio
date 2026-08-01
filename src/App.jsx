@@ -1,8 +1,8 @@
 import React from "react";
 
-function ContactButton({ href, children, ariaLabel }) {
+function ContactButton({ href, children, ariaLabel, ...props }) {
   return (
-    <a className="contact-btn" href={href} aria-label={ariaLabel}>
+    <a className="contact-btn" href={href} aria-label={ariaLabel} {...props}>
       {children}
     </a>
   );
@@ -34,35 +34,41 @@ export default function App() {
       </header>
 
       <main className="container" role="main">
-        <section aria-labelledby="skills-heading" className="card">
-          <h2 id="skills-heading">Conocimientos técnicos</h2>
-          <ul className="skills-list" aria-label="Lista de conocimientos">
-            <li>Java</li>
-            <li>REST</li>
-            <li>GraphQL</li>
-            <li>MongoDB</li>
-            <li>Git / GitHub</li>
-          </ul>
-        </section>
+        <div className="main-grid">
+          <div className="left-col">
+            <section aria-labelledby="skills-heading" className="card">
+              <h2 id="skills-heading">Conocimientos técnicos</h2>
+              <ul className="skills-list" aria-label="Lista de conocimientos">
+                <li>Java</li>
+                <li>REST</li>
+                <li>GraphQL</li>
+                <li>MongoDB</li>
+                <li>Git / GitHub</li>
+              </ul>
+            </section>
 
-        <section aria-labelledby="education-heading" className="card">
-          <h2 id="education-heading">Educación</h2>
-          <ul className="education-list" aria-label="Cursos realizados">
-            <li>Creating a microservice</li>
-            <li>Java 21</li>
-            <li>Scrum master</li>
-          </ul>
-        </section>
-
-        <section aria-labelledby="projects-heading" className="card">
-          <h2 id="projects-heading">Proyectos</h2>
-          <p className="muted">Aún no hay proyectos publicados. Aquí aparecerán los proyectos cuando estén listos.</p>
-          <div className="projects-grid" aria-hidden="true">
-            {/* Placeholder visual boxes */}
-            <div className="project-placeholder">Próximo proyecto</div>
-            <div className="project-placeholder">Próximo proyecto</div>
+            <section aria-labelledby="education-heading" className="card">
+              <h2 id="education-heading">Educación</h2>
+              <ul className="education-list" aria-label="Cursos realizados">
+                <li>Creating a microservice</li>
+                <li>Java 21</li>
+                <li>Scrum master</li>
+              </ul>
+            </section>
           </div>
-        </section>
+
+          <div className="right-col">
+            <section aria-labelledby="projects-heading" className="card">
+              <h2 id="projects-heading">Proyectos</h2>
+              <p className="muted">Aún no hay proyectos publicados. Aquí aparecerán los proyectos cuando estén listos.</p>
+              <div className="projects-grid" aria-hidden="true">
+                {/* Placeholder visual boxes */}
+                <div className="project-placeholder">Próximo proyecto</div>
+                <div className="project-placeholder">Próximo proyecto</div>
+              </div>
+            </section>
+          </div>
+        </div>
       </main>
 
       <footer className="site-footer" role="contentinfo">
